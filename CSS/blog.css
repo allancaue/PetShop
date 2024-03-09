@@ -6,6 +6,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     font-family: "Inter", sans-serif;
+    scrollbar-width: thin;
 }
 
 header {
@@ -51,32 +52,59 @@ a {
     box-shadow: 0px 6px 31px -6px #00000040;
 }
 
-.secaoLocalDestaques {
+.subLocalDePerguntas {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px;
-    width: 90%;
-}
-
-.prduto {
-    border-radius: 8px;
+    flex-direction: column;
     background-color: white;
-    border: solid white 5px;
+    border: solid white 10px;
+    border-radius: 8px;
     box-shadow: 0px 6px 31px -6px #00000040;
 }
 
-.prduto img {
-    max-height: 250px;
-}
-
-.secaoLocalProdutos {
-    border: solid transparent 20px;
+.cabecalho {
+    padding: 10px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0px;
+}
+
+.cabecalho p {
+    padding: 5px;
+}
+
+.cabecalho input {
+    border-radius: 50px;
+    height: 20px;
+}
+
+.text {
+    width: 100%;
+}
+
+.text input {
+    border-radius: 50px;
+    height: 200px;
+    width: 100%;
+}
+
+.subLocalComentarios {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
     width: 90%;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    border-radius: 8px;
+    border: solid white 20px;
+    box-shadow: 0px 6px 31px -6px #00000040;
+    overflow: hidden;
+    overflow-y: auto;
 }
 
 .subLinks {
@@ -101,41 +129,26 @@ a {
 }
 
 ::-webkit-scrollbar {
-    width: 0px;
-   }
+ width: 0px;
+}
 
-@media (max-width: 1120px) {
-    .prduto img {
-        max-height: 150px;
+@media (max-width: 1319px) {
+    .subLocalComentarios {
+        gap: 10px;
     }
 }
 
-@media (max-width: 739px) {
-    .prduto img {
-        max-height: 100px;
-    }
-
-    .prduto h3{
-        font-size: 15px;
-    }
-
-    .body p {
-        font-size: 10px;
-    }
-}
-
-@media (max-width: 571px) {
-    header {
+@media (max-width: 743px) {
+    .subLocalComentarios {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        background-color: whitesmoke;
-        border-radius: 8px;
-        padding: 0px 20px 0px 20px;
-        box-shadow: 0px 6px 31px -6px #00000040;
+        align-items: start;
+        justify-content: space-around;
     }
 
-    nav {
+    .comentario {
         width: 90%;
+        height: 200px;
     }
 }
+
