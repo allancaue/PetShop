@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="/CSS/index.css">
+    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Petshop</title>
@@ -26,9 +26,23 @@
                 <li>
                     <a href="/pages/blog.html">Blog</a>
                 </li>
+                <li>
+                    <a href="#" onclick="openCartPopup()"><img src="./img/carrinho-de-compras.png" alt="Carrinho"></a>
+                </li>
             </ul>
         </nav>
     </header>
+    <div id="cartPopup" class="cart-popup">
+        <span onclick="closeCartPopup()" class="close">&times;</span>
+        <div class="fundoPop">
+            <h2>Carrinho</h2>
+            <div id="cartContent"></div>
+            <div id="totalPrice"></div>
+        </div>
+    </div>
+    <div id="blurBackground" class="blur-background"></div>
+
+    <script src="./JS/index.js"></script>
     <main>
         <div class="subQuadrado">
             <section class="quadrado">
@@ -62,21 +76,25 @@
                         <img src="/img/Racao.png" alt="Racao">
                         <h3>Produto 1</h3>
                         <p>R$ 29,99</p>
+                        <button onclick="addToCart('Produto 1', 29.99)">Adicionar ao Carrinho</button>
                     </div>
                     <div class="prduto">
                         <img src="/img/Racao.png" alt="Racao">
                         <h3>Produto 1</h3>
                         <p>R$ 29,99</p>
+                        <button onclick="addToCart('Produto 1', 29.99)">Adicionar ao Carrinho</button>
                     </div>
                     <div class="prduto">
                         <img src="/img/Racao.png" alt="Racao">
                         <h3>Produto 1</h3>
                         <p>R$ 29,99</p>
+                        <button onclick="addToCart('Produto 1', 29.99)">Adicionar ao Carrinho</button>
                     </div>
                     <div class="prduto">
                         <img src="/img/Racao.png" alt="Racao">
                         <h3>Produto 1</h3>
                         <p>R$ 29,99</p>
+                        <button onclick="addToCart('Produto 1', 29.99)">Adicionar ao Carrinho</button>
                     </div>
                 </div>
                 <div class="secaoLocalProdutos">
@@ -84,21 +102,25 @@
                         <img src="/img/Racao.png" alt="Racao">
                         <h3>Produto 1</h3>
                         <p>R$ 29,99</p>
+                        <button onclick="addToCart('Produto 1', 29.99)">Adicionar ao Carrinho</button>
                     </div>
                     <div class="prduto">
                         <img src="/img/Racao.png" alt="Racao">
                         <h3>Produto 1</h3>
                         <p>R$ 29,99</p>
+                        <button onclick="addToCart('Produto 1', 29.99)">Adicionar ao Carrinho</button>
                     </div>
                     <div class="prduto">
                         <img src="/img/Racao.png" alt="Racao">
                         <h3>Produto 1</h3>
                         <p>R$ 29,99</p>
+                        <button onclick="addToCart('Produto 1', 29.99)">Adicionar ao Carrinho</button>
                     </div>
                     <div class="prduto">
                         <img src="/img/Racao.png" alt="Racao">
                         <h3>Produto 1</h3>
                         <p>R$ 29,99</p>
+                        <button onclick="addToCart('Produto 1', 29.99)">Adicionar ao Carrinho</button>
                     </div>
                 </div>
             </section>
